@@ -3,10 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
-}
-
-/* Roboto font for every text */
-body{
     font-family: Roboto;
 }
 
@@ -87,8 +83,15 @@ hero{
     font-size: 14px;
 }
 
+.placeholder img {
+    width: 500px;
+    height: 250px;
+}
+
 /* Styles for button which belongs to hero class*/
 .hero button {
+    flex: 1;
+    font-size: 18px;
     background-color: #3882F6;
     color: white;
     padding: 10px 20px;
@@ -132,12 +135,18 @@ hero{
 .square{
     width: 150px;
     height: 150px;
-    border: 6px solid #3882F6;
     border-radius: 1rem;
     background-color: white;
 }
 
-/* Subtext for each square */
+/* Square images */
+.square img{
+    width: 150px;
+    height: 150px;
+    border-radius: 1rem;
+}
+
+/* Styles for each subtext which is written below the images */
 .subtext {
     margin-top: 12px;
     color: #4B5563; 
@@ -175,12 +184,15 @@ hero{
 
 /* Section 4 */
 #fourth-section{
-    padding: 120px;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Box sign-up */
 .sign-up{
-    padding: 80px;
+    flex: 0.8;
+    padding: 64px;
     border-radius: 8px;
     background-color: #3882F6;
     color: white;
@@ -192,14 +204,20 @@ hero{
 
 /* Button */
 .sign-up button{
+    width: 150px;
     flex-shrink: 0;
     border-radius: 8px;
     border: 3px solid white;
     background-color: #3882F6;
     color: white;
     padding: 10px 20px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.sign-up-content p{
+    color: #E5E7EB;
 }
 
 /* Footer styles*/
